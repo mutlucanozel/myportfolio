@@ -43,11 +43,14 @@
 .content .btn {
     margin: 1rem 0.2rem;
 }
-@media  screen and (max-width:640px) {
+@media screen and (max-width: 640px) {
     .hero .content h1 {
         font-size: 3rem;
-    }.hero .content p {
+    }
+    .hero .content p {
         font-size: 1.4rem;
-     
-    }  
+    }
+    .content .btn, .content .btnLight {
+        margin: 1rem 0.2rem; /* Adjust the margin as needed */
+    }
 }
