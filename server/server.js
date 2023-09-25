@@ -1,0 +1,52 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const validator = require('validator');
+const nodemailer = require('nodemailer');
+
+const app = express();
+
+app.use(bodyParser.json());
+app.use(cors());
+
+app.post('/submit-form', async (req, res) => {
+  const formData = req.body;
+
+  // Email address validation
+  if (!validator.isEmail(formData.email)) {
+    return res.status(400).json({ error: 'Geçerli bir e-posta adresi girmelisiniz. Bu e-posta adresi kullanılmayacaktır.' });
+  }
+
+  try {
+    // Email sending using nodemailer
+    const transporter = nodemailer.createTransport({
+      service: 'Gmail', // Replace with your email service provider (e.g., Gmail)
+      auth: {
+        user: 'deneme1999827@gmail.com', // Replace with your email address
+        pass: 'ajusqktnqvzlrkfm', // Replace with your email password
+      },
+    });
+
+    const mailOptions = {
+      from: 'deneme1999827@gmail.com',
+      to: 'mutlu-26@hotmail.com', // Set the recipient email address here
+      subject: formData.subject,
+      text: `Gönderen: ${formData.name}\nE-posta: ${formData.email}\nKonu: ${formData.subject}\nMesaj: ${formData.message}`,
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    // You can process and store the data here
+    console.log(formData);
+    res.json({ message: 'Form verileri başarıyla alındı ve e-posta gönderildi.' });
+  } catch (error) {
+    console.error('E-posta gönderimi sırasında bir hata oluştu.', error);
+    res.status(500).json({ error: 'E-posta gönderimi sırasında bir hata oluştu.' });
+  }
+});
+
+const port = process.env.PORT || 3001;
+
+app.listen(port, () => {
+  console.log(`Sunucu ${port} portunda çalışıyor.`);
+});

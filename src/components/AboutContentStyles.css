@@ -1,0 +1,39 @@
+.about{
+    width: 100%;
+    margin: 3rem 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+h1 {
+    font-size: 2.8rem; /* Yazı boyutunu istediğiniz değere ayarlayın */
+}
+.about .left{
+    text-align: center;
+    margin: auto;
+    padding: rem;
+    max-width: 850px;
+
+}
+.scroll-button {
+    display: none;
+    position: fixed;
+    bottom: 20px; /* Düğmenin alt kenarının ne kadar yükseklikte olmasını isterseniz burayı ayarlayabilirsiniz */
+    right: 20px; /* Düğmenin sağ kenarının ne kadar uzakta olmasını isterseniz burayı ayarlayabilirsiniz */
+    z-index: 1; /* Diğer öğelerin üzerinde görünmesini sağlamak için bir z-indeks değeri verin */
+    cursor: pointer;
+    background-color: #007bff; /* Düğme rengini ve stilini istediğiniz gibi özelleştirin */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+.about .left p {
+    margin: 2rem 0; /* Paragraf aralığını düzenleyin */
+    font-size: 1.4rem;
+    text-align: left;/* Paragraf düzenini sol kenara ayarlayın */
+    line-height: 1.5; /* Satır yüksekliğini ayarlayın */
+}

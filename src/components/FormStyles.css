@@ -1,0 +1,36 @@
+label{
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin: auto;
+    max-width: 600px;
+}
+/* FormStyles.css */
+
+/* Define a custom class for the success toast */
+.success-toast {
+    background-color: #501cab;
+    opacity: 0.8;
+     /* Green background color */
+
+    color: white; /* White text color */
+    font-size: 20px; /* Increase font size for larger toast */
+    text-align: center;
+    padding: 16px; /* Add padding for better appearance */
+    border-radius: 8px; /* Add rounded corners */
+  }
+  
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);  
+    color: #f4f4f4;
+
+}
