@@ -34,7 +34,7 @@ const Navbar = () => {
 
     return (
         <div className={color ? "header header-bg" : "header"}>
-            <h4>Mutlu Can ÖZEL.</h4>
+            <h1>Mutlu Can ÖZEL.</h1>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                 <li>
                     <Link to="/" onClick={handleNavLinkClick}>Ana Sayfa</Link>
