@@ -41,7 +41,7 @@ class HeroImg2 extends Component {
                             left: "97%",
                             transform: "translateX(-50%)",
                             display: "flex",
-                            fontSize: "15px", 
+                            fontSize: "12px", 
                             flexDirection: "column",
                             alignItems: "center",
                         }}
