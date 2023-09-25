@@ -33,18 +33,20 @@ class HeroImg2 extends Component {
                 <div className="icon-container">
                     <div
                     onClick={this.scrollToElement}
-                        style={{
-                            color: "white", // Sarı renk
-                            opacity: "1.8",
-                            position: "absolute",
-                            bottom: "240px", // İkonun altından uzaklığı ayarlayın
-                            left: "97%",
-                            transform: "translateX(-50%)",
-                            display: "flex",
-                            fontSize: "12px", 
-                            flexDirection: "column",
-                            alignItems: "center",
-                        }}
+                    style={{
+                        color: "white", // Sarı renk
+                        opacity: "1.8",
+                        position: "absolute",
+                        bottom: "740px", // İkonun alttan uzaklığı ayarlayın
+                        right: "40px", // Sağ köşeye sabitleme ve sola kaydırma
+                        transform: "translateX(50%)", // Sağ alt köşeye hizalama
+                        display: "flex",
+                        fontSize: "12px",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                      
+                      
                     >
                          <div className="social-img">
                 <a href="https://www.linkedin.com/in/mutlucanozel" target="_blank" rel="noopener noreferrer">
@@ -57,7 +59,7 @@ class HeroImg2 extends Component {
         <FaInstagram size={50} style={{ color: "#fff"}} />
     </a>
                 </div>
-                        {wordsWithSpaces}
+                   
                     </div>
                    
                 </div>
