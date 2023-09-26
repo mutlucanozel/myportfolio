@@ -11,7 +11,6 @@ const Project = () => {
     <Navbar/>
     <HeroImg2 heading="Portföy" text="Tamamlanmış ve halihazırda üzerinde çalıştığım projeleri bu sayfada bulabilrisiniz."/>
     <Work />
-
     <Footer/>
     </div>
   )

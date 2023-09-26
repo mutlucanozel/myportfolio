@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const validator = require('validator');
@@ -9,6 +10,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+// Serve static files from the 'public' folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Define your API route for form submission
 app.post('/submit-form', async (req, res) => {
   const formData = req.body;
 
@@ -43,6 +48,11 @@ app.post('/submit-form', async (req, res) => {
     console.error('E-posta gönderimi sırasında bir hata oluştu.', error);
     res.status(500).json({ error: 'E-posta gönderimi sırasında bir hata oluştu.' });
   }
+});
+
+// Catch-all route to serve the HTML file for client-side routing
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 const port = process.env.PORT || 3001;
