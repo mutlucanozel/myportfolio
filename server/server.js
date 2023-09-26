@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Define your API route for form submission
-app.post('/submit-form', async (req, res) => {
+app.post('https://myportfoliobackend-mlj1.onrender.com/submit-form', async (req, res) => {
   const formData = req.body;
 
   // Email address validation
@@ -51,15 +51,15 @@ app.post('/submit-form', async (req, res) => {
 });
 
 // Catch-all route to serve the HTML file for client-side routing
-app.get('/about', (req, res) => {
+app.get('https://myportfoliobackend-mlj1.onrender.com/about', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/project', (req, res) => {
+app.get('https://myportfoliobackend-mlj1.onrender.com/project', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/contact', (req, res) => {
+app.get('https://myportfoliobackend-mlj1.onrender.com/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
