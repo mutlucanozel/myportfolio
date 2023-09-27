@@ -59,7 +59,7 @@ app.get('https://mysite1-bp9j.onrender.com/project', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('https://mysite1-bp9j.onrender.com/contact', (req, res) => {
+app.get('https://myportfoliobackend-mlj1.onrender.com/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
