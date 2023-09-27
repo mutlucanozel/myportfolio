@@ -1,7 +1,7 @@
 /* HeroImgStyles.css */
 
 .h1{
-  font-size: 3px;
+  font-size: 1px;
 }
 .hero {
     height: 100%;
@@ -59,7 +59,7 @@
   
   @media screen and (max-width: 640px) {
     .hero .content h1 {
-      font-size: 1rem;
+      font-size: 0.5rem;
     }
     
     .hero .content p {
