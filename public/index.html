@@ -7,6 +7,22 @@
 </head>
 <body>
   <div id="root"></div>
+
   <script src="/static/js/main.js"></script> <!-- Check this path -->
+
+  <!-- React Router için gerekli olan BrowserRouter'ı ekleyin -->
+  <script type="module">
+    import React from 'react';
+    import ReactDOM from 'react-dom';
+    import App from './App';
+    import { BrowserRouter } from 'react-router-dom';
+
+    const root = document.getElementById('root');
+    ReactDOM.createRoot(root).render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
+  </script>
 </body>
 </html>
