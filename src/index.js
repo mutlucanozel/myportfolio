@@ -16,7 +16,7 @@ function ScrollToTop() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename='/my-app'>
+  <BrowserRouter>
     <ScrollToTop />
     <App />
   </BrowserRouter>
