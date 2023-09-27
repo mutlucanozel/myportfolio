@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { BrowserRouter, useLocation } from 'react-router-dom'; // Import useLocation
+import { HashRouter as BrowserRouter, HashRouter, useLocation } from 'react-router-dom';
 
 function ScrollToTop() {
   const location = useLocation(); // Get the current location using useLocation
@@ -16,8 +16,10 @@ function ScrollToTop() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
+  <div>
+  <HashRouter>
     <ScrollToTop />
     <App />
-  </BrowserRouter>
+</HashRouter>
+</div>
 );
