@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Define your API route for form submission
-app.post('https://mysite1-bp9j.onrender.com/submit-form', async (req, res) => {
+app.post('/submit-form', async (req, res) => {
   const formData = req.body;
 
   // Email address validation
@@ -52,6 +52,11 @@ app.post('https://mysite1-bp9j.onrender.com/submit-form', async (req, res) => {
 
 // Catch-all route
 app.use(express.static(path.join(__dirname, 'public')));
+
+// Diğer middleware'leri ve rotaları ekleyin
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 const port = process.env.PORT || 3001;
 
 app.listen(port, () => {
