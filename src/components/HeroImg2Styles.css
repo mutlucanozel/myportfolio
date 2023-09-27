@@ -1,19 +1,19 @@
-.hero-img{
+.hero-img {
     width: 100%;
     background: rgba(0, 0, 0, 0.1);
     height: 100vh;
     position: relative;
-}
-
-.social-img {
+  }
+  
+  .social-img {
     position: absolute;
-    top: 560px; /* İkonun yatay konumunu ayarlayın */
-    left: 5px; /* İkonun dikey konumunu ayarlayın */
+    top: 560px;
+    left: 5px;
     transform: translateX(-50%);
     z-index: -1;
-}
-
-.hero-img::before {
+  }
+  
+  .hero-img::before {
     content: "";
     background: url("https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
     background-size: cover;
@@ -25,37 +25,46 @@
     left: 0;
     opacity: 0.4;
     z-index: -1;
-}
-button{
-    
-        padding: 13px 32px;
-        font-size: 1rem;
-        text-transform: uppercase;
-        background: rgb(248, 217, 15);
-        color: #222;
-        border: 1px solid #fff;
-        font-weight: 600;
-        cursor: pointer;
-
-}
-.heading{
+  }
+  
+  button {
+    padding: 13px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: rgb(248, 217, 15);
+    color: #222;
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .heading {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-.hero-img h1{
+  }
+  
+  .hero-img h1 {
     font-size: 2.4rem;
-}
-.hero-img p{
+  }
+  
+  .hero-img p {
     font-size: 1.4rem;
     text-align: center;
-}
-@media screen and(max-width: 640px) {
+  }
+  
+ /* ... Your existing styles ... */
+
+@media screen and (max-width: 640px) {
     .hero-img h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
-}
+    .hero-img p {
+        font-size: 1rem; /* Adjust the font size as needed */
+        line-height: 1.5; /* Adjust the line height for the desired spacing */
+        white-space: normal; /* Allow the text to wrap to the next line */
+      }
+    }

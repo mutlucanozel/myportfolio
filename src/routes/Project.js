@@ -9,7 +9,7 @@ const Project = () => {
   return (
     <div>
     <Navbar/>
-    <HeroImg2 heading="Portföy" text="Tamamlanmış ve halihazırda üzerinde çalıştığım projeleri bu sayfada bulabilrisiniz."/>
+    <HeroImg2 heading="Portföy" text="Tamamlanmış ve halihazırda üzerinde çalıştığım projeleri bu sayfada bulabilrisiniz."  style={{ fontSize: '2rem' }}/>
     <Work />
     <Footer/>
     </div>
