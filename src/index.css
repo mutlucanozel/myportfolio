@@ -1,49 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-.buton2 {
-  padding: 10px 15px;
-  font-size: 1rem;
-  background: linear-gradient(90deg, #4a90e2, #005cbf); /* Modern mavi tonları */
-  color: #fff;
+
+.buton2, .buton3 {
+  padding: 15px 25px; /* Buton boyutunu büyüttük */
+  font-size: 1.5rem; /* Yazı boyutunu artırdık */
+  border-radius: 8px; /* Daha yuvarlatılmış köşeler */
+  margin-bottom: 15px; /* Butonlar arasındaki boşluğu artırdık */
+
+  /* Ortak Stiller */
   border: none;
-  opacity: 0.8;
-  border-radius: 5px;
-  font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buton2 {
+  background: linear-gradient(90deg, #003366, #001f4d);
+  color: #fff;
+  font-weight: 600;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .buton2:hover {
-  opacity: 1.0;
-  background: linear-gradient(90deg, #005cbf, #4a90e2);
+  background: linear-gradient(90deg, #001f4d, #003366);
   transform: scale(1.05);
-  box-shadow: 0 8px 12px rgba(74, 144, 226, 0.2), 0 4px 8px rgba(74, 144, 226, 0.1);
+  box-shadow: 0 8px 12px rgba(0, 31, 77, 0.2), 0 4px 8px rgba(0, 31, 77, 0.1);
 }
 
+.buton3 {
+  background: linear-gradient(90deg, #2d2d2d, #000000);
+  color: #ffffff;
+  font-weight: 700;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
 
-*{
+.buton3:hover {
+  background: linear-gradient(90deg, #000000, #2d2d2d);
+  transform: scale(1.08);
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.4), 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Genel Stiller */
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- font-family: "Outfit", sans-serif;
-
+  font-family: "Outfit", sans-serif;
 }
 
-body{
-  background: #000; ;
+body {
+  background: #000;
+  color: #fff;
 }
-h1,h4,p,
-a{
-  color:#ffff;
+
+h1, h4, p, a {
+  color: #ffff;
   text-decoration: none;
 }
-ul{
-  list-style-type: none;
 
+ul {
+  list-style-type: none;
 }
+
 .btn {
-  padding: 13px 32px;
-  font-size: 1rem;
+  padding: 15px 30px;
+  font-size: 1.2rem;
   text-transform: uppercase;
   background: rgb(248, 217, 15);
   color: #222;
@@ -52,14 +71,13 @@ ul{
   cursor: pointer;
 }
 
-
 .btn-light {
   background: transparent;
   color: #fff;
-
 }
+
 .btn:hover {
   background: rgb(255, 255, 255, 0.2);
   color: #fff;
-  transition: 0.35;
+  transition: 0.35s;
 }

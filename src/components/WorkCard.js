@@ -12,7 +12,7 @@ const WorkCard = (props) => {
 <NavLink to={props.view} className="buton2">
 Detaylı İncele
 </NavLink>
-<NavLink to={props.video} className="buton2">
+<NavLink to={props.video} className="buton3">
 Videosunu İzle
 </NavLink>
 </div>
