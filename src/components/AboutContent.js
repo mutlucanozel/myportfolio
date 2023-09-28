@@ -33,7 +33,7 @@ Ben Mutlu Can ÖZEL. Kocaeli Üniversitesi Elektronik ve haberleşme mühendisli
 </p>
 <p>
 Mobil ve Web geliştirme konusunda tasarım estetiği ile kullanılabilirlik arasındaki dengeyi kurmaya özen gösteriyor, kullanıcıların ihtiyaçlarını anlamak ve bu ihtiyaçları en iyi şekilde karşılayacak arayüzler oluşturmak için geliştirmeler yapıyorum. Ayrıca, takım çalışmasına yatkın bir yapım olduğunu düşünüyor ve farklı disiplinlerden gelen insanlarla işbirliği yapmayı keyifli buluyorum.</p>
-   <p>Benimle ilgili daha detaylı bilgi sahibi olmak için Özgeçmişime göz gezdirebilirsiniz.</p>
+   <p>Benimle ilgili daha detaylı bilgi sahibi olmak için özgeçmişime göz gezdirebilirsiniz.</p>
    <button className="btn4" onClick={handleDownloadClick}>ÖzgeÇMİŞ İndİr </button>
 
   <br></br><br></br><br></br> 
