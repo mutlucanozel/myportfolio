@@ -91,7 +91,7 @@ const Form = () => {
         <h1 className="project-heading">İletişim Formu</h1>
         <label>İsim Soyisim</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} />
-        <label>Email</label>
+        <label>E-posta</label>
         <input type="email" name="email" value={formData.email} onChange={handleChange} />
         <label>Konu</label>
         <input type="text" name="subject" value={formData.subject} onChange={handleChange} />

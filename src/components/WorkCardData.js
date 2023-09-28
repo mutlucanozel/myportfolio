@@ -3,41 +3,51 @@
  import pro3 from "../assets/project3.gif"
  import pro4 from "../assets/project4.png"
  import pro5 from "../assets/project5.png"
- 
+ import pro6 from "../assets/project6.gif"
  const ProjectCardData = [
     {
         imgsrc: pro1,
-        title: "iOS Tabanlı Mobil Uygulama ve Web Tabanlı E-ticaret Admin Paneli",
-        text:  "MERN stack teknolojiler kullanılarak bir admin paneli ve SwiftUI ile mobil uygulama geliştirdim. ",
+        title: "Web Tabanlı Admin Paneli",
+        text:  "MERN stack teknolojiler kullanılarak  admin paneli geliştirildi resimleri bulutta tutmak için cloudinary verileri saklamak için MongoDB Atlas, ödemeler için Stripe test kartları kullanıldı.",
         view: "https://github.com/mutlucanozel/adminfullstack",
         video: "https://www.linkedin.com/posts/mutlucanozel_de%C4%9Ferli-ba%C4%9Flant%C4%B1lar%C4%B1m-elektronik-ve-haberle%C5%9Fme-activity-7075475300419072000-Yw8P?utm_source=share&utm_medium=member_desktop",
     },
     {
         imgsrc: pro2,
-        title: "Kişisel Web Sitem",
-        text:  "Html, Css, ReactJS kullanarak hakkımda, portföy ve iletişim sekmelerinin olduğu full responsive  hazırlamış olduğum web sitesi.",
+        title: "Kişisel Web Sitesi",
+        text:  "Html, Css, React, Node.JS ve Express.Js kullanarak hakkımda, portföy ve iletişim sekmelerinin bulunduğu responsive web sitesi geliştirildi ve servera deploy edildi.",
 
 
     },
     {
         imgsrc: pro5,
         title: "Gerçek Zamanlı Mesajlaşma Sitesi",
-        text:  "Authentication ve SMS bildirimleri kullanarak Full stack gerçek zamanlı  mesajlaşma uygulamasını geliştirme aşamasındayım.",
+        text:  "Authentication ve SMS bildirimleri kullanarak Full stack gerçek zamanlı  mesajlaşma uygulaması geliştirilme aşamasındadır.",
         
-    }, {
+    },
+     {
+        imgsrc: pro6,
+        title: "Müşteriler için mobil uygulama",
+        text:  "Bu proje kapsamında, SwiftUI kullanılarak admin panelinden paylaşılan ilanları görebilmeleri ilan sahibini araybilmeleri ve ödeme yapma gibi imkanların bulunduğu mobil uygulama geliştirildi.",
+        view: "https://github.com/mutlucanozel/adminfullstack",
+        video: "https://www.linkedin.com/posts/mutlucanozel_de%C4%9Ferli-ba%C4%9Flant%C4%B1lar%C4%B1m-elektronik-ve-haberle%C5%9Fme-activity-7075475300419072000-Yw8P?utm_source=share&utm_medium=member_desktop",
+   
+    },
+     {
         imgsrc: pro3,
         title: "To-Do List Uygulaması",
-        text:  "Bu proje kapsamında,  MVVM mimari deseni kullanarak SwiftUI ile yapılacaklar listei uygulaması geliştirdim. Verileri kalıcı olarak saklamak için UserDefaults kullandım.",
+        text:  "Bu proje kapsamında,  MVVM mimari deseni kullanarak SwiftUI ile yapılacaklar listesi uygulaması geliştirildi. Verileri kalıcı olarak saklamak için UserDefaults kullanıldı.",
         view: "https://github.com/mutlucanozel/ToDoListApp",
         video: "https://www.youtube.com/shorts/ajINjzHZ5M8"
         
     },{
         imgsrc: pro4,
-        title: "Deezer Api Uygulaması",
-        text:  "Bu proje kapsamında, Deezer API'larını kullanarak SwiftUI ile bir uygulama geliştirdim.",
+        title: "Müzik Uygulaması",
+        text:  "Bu proje kapsamında, Deezer Apileri kullanılarak SwiftUI ile mobil uygulama geliştirildi",
         view: "https://github.com/mutlucanozel/project_deezer_swiftui",
         video: "https://www.youtube.com/shorts/jLjqubwAyEA"
         
     },
+   
  ];
 export default ProjectCardData;
