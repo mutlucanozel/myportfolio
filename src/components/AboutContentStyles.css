@@ -7,6 +7,16 @@
     flex-wrap: wrap;
     height: 100%;
 }
+.btn4{
+    padding: 13px 32px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background: rgb(248, 217, 15);
+    color: #222;
+    border: 1px solid #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
 h1 {
     font-size: 2.8rem; /* Yazı boyutunu istediğiniz değere ayarlayın */
 }
