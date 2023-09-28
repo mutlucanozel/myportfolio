@@ -1,15 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 .buton2 {
-  padding: 9px 12px;
+  padding: 10px 15px;
   font-size: 1rem;
-  background: rgb(248, 217, 15);
-  color: #222;
-  border: 0.5px solid #403004;
-  border-radius: 3px;
+  background: linear-gradient(90deg, #4a90e2, #005cbf); /* Modern mavi tonları */
+  color: #fff;
+  border: none;
+  opacity: 0.8;
+  border-radius: 5px;
   font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+
+.buton2:hover {
+  opacity: 1.0;
+  background: linear-gradient(90deg, #005cbf, #4a90e2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(74, 144, 226, 0.2), 0 4px 8px rgba(74, 144, 226, 0.1);
+}
+
+
 *{
   box-sizing: border-box;
   margin: 0;
