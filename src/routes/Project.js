@@ -11,7 +11,7 @@ const Project = () => {
   return (
     <div>
     <Navbar/>
-    <HeroImg2 heading="Portföy" text="Tamamlanmış ve halihazırda üzerinde çalıştığım projeleri bu sayfada bulabilrisiniz." imageSrc={heroImageSrc}  style={{ fontSize: '2rem' }} />
+    <HeroImg2 heading="Portföy" text="Tamamlanmış ve halihazırda üzerinde çalıştığım projeleri bu sayfada bulabilirisiniz." imageSrc={heroImageSrc}  style={{ fontSize: '2rem' }} />
     <Work />
     <Footer/>
     </div>
