@@ -8,7 +8,7 @@
     {
         imgsrc: pro1,
         title: "Web Tabanlı Admin Paneli",
-        text:  "MERN stack teknolojiler kullanılarak  admin paneli geliştirildi resimleri bulutta tutmak için cloudinary verileri saklamak için MongoDB Atlas, ödemeler için Stripe test kartları kullanıldı.",
+        text:  "MERN stack teknolojiler kullanılarak  admin paneli geliştirildi resimleri bulutta tutmak için cloudinary, verileri saklamak için MongoDB Atlas, ödemeler için Stripe test kartları kullanıldı.",
         view: "https://github.com/mutlucanozel/adminfullstack",
         video: "https://www.linkedin.com/posts/mutlucanozel_de%C4%9Ferli-ba%C4%9Flant%C4%B1lar%C4%B1m-elektronik-ve-haberle%C5%9Fme-activity-7075475300419072000-Yw8P?utm_source=share&utm_medium=member_desktop",
     },
