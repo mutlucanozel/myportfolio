@@ -36,7 +36,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Define your API route for form submission
-app.post('/submit-form', async (req, res) => {
+app.post('https://www.mutlucanozel.com.tr/submit-form', async (req, res) => {
   const formData = req.body;
 
   // Email address validation
