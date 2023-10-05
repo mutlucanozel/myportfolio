@@ -44,7 +44,7 @@ const Form = () => {
     }
 
     try {
-      const response = await fetch('/submit', {
+      const response = await fetch('/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', 
