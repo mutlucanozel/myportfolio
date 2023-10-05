@@ -6,6 +6,28 @@ const validator = require('validator');
 const nodemailer = require('nodemailer');
 
 const app = express();
+const socket = new WebSocket('wss://www.mutlucanozel.com.tr');
+
+socket.addEventListener('open', (event) => {
+    console.log('WebSocket bağlantısı başarılı.');
+    // Diğer işlemleri burada gerçekleştirebilirsiniz.
+});
+
+socket.addEventListener('message', (event) => {
+    console.log('Mesaj alındı:', event.data);
+    // Gelen mesajları işleyebilirsiniz.
+});
+
+socket.addEventListener('close', (event) => {
+    console.log('WebSocket bağlantısı kapandı.');
+    // Bağlantı kapandığında gerekli işlemleri burada yapabilirsiniz.
+});
+
+socket.addEventListener('error', (event) => {
+    console.error('WebSocket hatası:', event);
+    // Hata durumunda gerekli işlemleri burada yapabilirsiniz.
+});
+
 
 app.use(bodyParser.json());
 app.use(cors());
