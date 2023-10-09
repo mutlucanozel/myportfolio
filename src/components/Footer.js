@@ -25,7 +25,7 @@ const Footer = () => {
         <div className="left">
           <h4>İletişim</h4>
           <p>
-            Kariyerim ya da projelerim hakkında herhangi bir soru, görüş, veya öneriniz varsa benimle
+            Kariyerim ya da projelerim hakkında herhangi bir soru, görüş veya öneriniz varsa benimle
             iletişim kurmaktan kaçınmayın. İşte bana ulaşabileceğiniz iletişim kanalları:{' '}
           </p>
           <div className="social">
