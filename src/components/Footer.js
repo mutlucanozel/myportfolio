@@ -35,6 +35,7 @@ const Footer = () => {
             <a href="https://instagram.com/mutlucanozel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={50} style={{ color: '#fff', marginRight: '1rem' }} />
             </a>
+            
           </div>
         </div>
         <div className="right">

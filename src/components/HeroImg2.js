@@ -26,6 +26,17 @@ class HeroImg2 extends Component {
             height: '100vh',
             position: 'relative',
         };
+        const iconContainerStyle = {
+            position: "absolute",
+            bottom: "740px",
+            right: "40px",
+            transform: "translateX(50%)",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            zIndex: 2, // Updated zIndex to make sure it's above the background image
+        };
+
 
         const backgroundImageStyle = {
             content: "''",
@@ -56,33 +67,17 @@ class HeroImg2 extends Component {
                     <h1>{this.props.heading}</h1>
                     <p>{this.props.text}</p>
                 </div>
-                <div className="icon-container">
-                    <div
-                        onClick={this.scrollToElement}
-                        style={{
-                            color: "white",
-                            opacity: "1.8",
-                            position: "absolute",
-                            bottom: "740px",
-                            right: "40px",
-                            transform: "translateX(50%)",
-                            display: "flex",
-                            fontSize: "12px",
-                            flexDirection: "column",
-                            alignItems: "center",
-                        }}
-                    >
-                        <div className="social-img">
-                            <a href="https://www.linkedin.com/in/mutlucanozel" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin size={50} style={{ color: "#fff" }} />
-                            </a>
-                            <a href="https://github.com/mutlucanozel" target="_blank" rel="noopener noreferrer">
-                                <img src={githublogo} alt="GitHub" style={{ width: "50px", height: "50px" }} />
-                            </a>
-                            <a href="https://instagram.com/mutlucanozel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
-                                <FaInstagram size={50} style={{ color: "#fff" }} />
-                            </a>
-                        </div>
+                <div className="icon-container" style={iconContainerStyle}>
+                    <div className="social-img">
+                        <a href="https://www.linkedin.com/in/mutlucanozel" target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin size={50} style={{ color: "#fff" }} />
+                        </a>
+                        <a href="https://github.com/mutlucanozel" target="_blank" rel="noopener noreferrer">
+                            <img src={githublogo} alt="GitHub" style={{ width: "50px", height: "50px" }} />
+                        </a>
+                        <a href="https://instagram.com/mutlucanozel?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer">
+                            <FaInstagram size={50} style={{ color: "#fff" }} />
+                        </a>
                     </div>
                 </div>
                 <div ref={this.targetRef}></div>
