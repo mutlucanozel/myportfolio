@@ -55,6 +55,12 @@ const Form = () => {
       if (response.ok) {
         console.log('Form successfully submitted.');
         window.scrollTo(0, 0);
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: '',
+        });
         toast.success('Mesajınız iletildi ! Vakit ayırdığınız için teşekkür ederim.', {
           position: 'top-center',
           autoClose: 6000,
@@ -64,12 +70,7 @@ const Form = () => {
           draggable: true,
           className: 'success-toast',
           onClose: () => {
-            setFormData({
-              name: '',
-              email: '',
-              subject: '',
-              message: '',
-            });
+           
           },
         });
       } else {
