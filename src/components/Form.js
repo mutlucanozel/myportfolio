@@ -44,7 +44,7 @@ const Form = () => {
     }
 
     try {
-      const response = await fetch('https://mutlucanozel.com.tr/submit-form', {
+      const response = await fetch('https://mutlucanozel.com.tr:3000/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json', 
