@@ -47,6 +47,21 @@
         view: "https://github.com/mutlucanozel/project_deezer_swiftui",
         video: "https://www.youtube.com/shorts/jLjqubwAyEA"
         
+    },{
+        imgsrc: pro4,
+        title: "ADS Squash Club Resmi İnternet Sitesi ",
+        text:  "ADS Squash Club Resmi İnternet Sitesi geliştirildi ve yayınlandı",
+        view: "https://www.adssquash.com",
+        video: "/"
+        
+    },
+    {
+        imgsrc: pro4,
+        title: "ADS Squash Club Resmi İnternet Sitesi Admin Panel,",
+        text:  "Ads Squash Club için gerekli yönetimlerin yapılacağı admin paneli geliştirildi.",
+        view: "https://www.adssquash.com/admin",
+        video: "/"
+        
     },
    
  ];
