@@ -1,68 +1,51 @@
- import pro1 from "../assets/project1.png"
- import pro2 from "../assets/project2.png"
- import pro3 from "../assets/project3.gif"
- import pro4 from "../assets/project4.png"
- import pro5 from "../assets/project5.png"
- import pro6 from "../assets/project6.gif"
- const ProjectCardData = [
+import pro1 from "../assets/project1.png"
+import pro2 from "../assets/project2.png"
+import pro6 from "../assets/project6.gif"
+import pro7 from "../assets/project7.png"
+import pro9 from "../assets/project9.png"
+import pro10 from "../assets/project10.png"
+import pro11 from "../assets/project11.png"
+import pro12 from "../assets/project12.png"
+const ProjectCardData = [
     {
-        imgsrc: pro1,
-        title: "Web Tabanlı Admin Paneli",
-        text:  "MERN stack teknolojiler kullanılarak  admin paneli geliştirildi resimleri bulutta tutmak için cloudinary, verileri saklamak için MongoDB Atlas, ödemeler için Stripe test kartları kullanıldı.",
-        view: "https://github.com/mutlucanozel/adminfullstack",
-        video: "https://www.linkedin.com/posts/mutlucanozel_de%C4%9Ferli-ba%C4%9Flant%C4%B1lar%C4%B1m-elektronik-ve-haberle%C5%9Fme-activity-7075475300419072000-Yw8P?utm_source=share&utm_medium=member_desktop",
+        imgsrc: pro7,
+        title: "ADS Squash Club Resmi İnternet Sitesi ",
+        text: "ADS Squash Club Resmi İnternet Sitesi mobil uyumlu tasarım (Responsive Design) prensibiyle istekler doğrultusunda geliştirildi ve yayınlandı.",
+        view: "https://www.adssquash.com",
+
+
+    },
+    {
+        imgsrc: pro9,
+        title: "ADS Squash Club Yönetim Paneli",
+        text: "Ads Squash Club için gerekli yönetimlerin yapıldığı yönetim paneli geliştirildi.",
+        view: "https://www.adssquash.com/admin",
+
+
+    },
+    {
+        imgsrc: pro12,
+        title: "BYB Software & Label Solutions resmi İnternet sitesi",
+        text: "Almanya merkezli BYB Software & Label Solutions için web sitesi geliştirilme aşamasındadır.",
+        view: "https://www.bybsolutions-gmbh.de",
+
+
     },
     {
         imgsrc: pro2,
         title: "Kişisel Web Sitesi",
-        text:  "Html, Css, React, Node.JS ve Express.Js kullanarak hakkımda, portföy ve iletişim sekmelerinin bulunduğu responsive web sitesi geliştirildi ve servera deploy edildi.",
-
+        text: "İsteklerim doğrultusunda şahsım adına kişisel web sitesi geliştirildi.",
 
     },
     {
-        imgsrc: pro5,
-        title: "Gerçek Zamanlı Mesajlaşma Sitesi",
-        text:  "Authentication ve SMS bildirimleri kullanarak Full stack gerçek zamanlı  mesajlaşma uygulaması geliştirilme aşamasındadır.",
-        
-    },
-     {
-        imgsrc: pro6,
-        title: "Müşteriler için mobil uygulama",
-        text:  "Bu proje kapsamında, SwiftUI kullanılarak admin panelinden paylaşılan ilanları görebilmeleri ilan sahibini araybilmeleri ve ödeme yapma gibi imkanların bulunduğu mobil uygulama geliştirildi.",
-        view: "https://github.com/mutlucanozel/adminfullstack",
-        video: "https://www.linkedin.com/posts/mutlucanozel_de%C4%9Ferli-ba%C4%9Flant%C4%B1lar%C4%B1m-elektronik-ve-haberle%C5%9Fme-activity-7075475300419072000-Yw8P?utm_source=share&utm_medium=member_desktop",
-   
-    },
-     {
-        imgsrc: pro3,
-        title: "To-Do List Uygulaması",
-        text:  "Bu proje kapsamında,  MVVM mimari deseni kullanarak SwiftUI ile yapılacaklar listesi uygulaması geliştirildi. Verileri kalıcı olarak saklamak için UserDefaults kullanıldı.",
-        view: "https://github.com/mutlucanozel/ToDoListApp",
-        video: "https://www.youtube.com/shorts/ajINjzHZ5M8"
-        
-    },{
-        imgsrc: pro4,
-        title: "Müzik Uygulaması",
-        text:  "Bu proje kapsamında, Deezer Apileri kullanılarak SwiftUI ile mobil uygulama geliştirildi",
-        view: "https://github.com/mutlucanozel/project_deezer_swiftui",
-        video: "https://www.youtube.com/shorts/jLjqubwAyEA"
-        
-    },{
-        imgsrc: pro4,
-        title: "ADS Squash Club Resmi İnternet Sitesi ",
-        text:  "ADS Squash Club Resmi İnternet Sitesi geliştirildi ve yayınlandı",
-        view: "https://www.adssquash.com",
-        video: "/"
-        
-    },
-    {
-        imgsrc: pro4,
-        title: "ADS Squash Club Resmi İnternet Sitesi Admin Panel,",
-        text:  "Ads Squash Club için gerekli yönetimlerin yapılacağı admin paneli geliştirildi.",
-        view: "https://www.adssquash.com/admin",
-        video: "/"
-        
-    },
-   
- ];
+        imgsrc: pro10,
+        title: "BYB ETİKET CRM ",
+        text: "Byb etiket için mobil uyumlu tasarım (Responsive Design) prensibiyle istekler doğrultusunda CRM sistemi geliştirildi ve şirket sunucularında deploy edildi.", 
+        view: "https://www.bybetiket.com",
+
+    }
+
+
+
+];
 export default ProjectCardData;

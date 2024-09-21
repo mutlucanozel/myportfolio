@@ -11,7 +11,7 @@
     padding-bottom: 5rem;
 }
 .project-card {
-    background: linear-gradient(135deg, #01080f, #040315);
+    background: #000000;
     color: white;
     border-radius: 12px;
     padding: 1.2rem 1rem;
@@ -19,6 +19,9 @@
     transition: transform 0.4s;
 }
 
+.wider-card {
+    grid-column: span 2; /* Make the wider card span 2 columns */
+}
 .project-card:hover {
     transform: translateY(-25px);
 }
