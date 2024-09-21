@@ -34,7 +34,7 @@ const ProjectCardData = [
     {
         imgsrc: pro2,
         title: "Kişisel Web Sitesi",
-        text: "İsteklerim doğrultusunda şahsım adına kişisel web sitesi geliştirildi.",
+        text: "Yaptığım projeleri sergilemek amacıyla bu web sitesini geliştirdim.",
 
     },
     {
