@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';  // createRoot doğru yerden import ediliyor
 import './index.css';
 import App from './App';
-import { HashRouter as BrowserRouter, HashRouter, useLocation } from 'react-router-dom';
+import { BrowserRouter, useLocation } from 'react-router-dom';  // BrowserRouter kullanıyoruz
 
 function ScrollToTop() {
   const location = useLocation(); // Get the current location using useLocation
@@ -14,12 +14,11 @@ function ScrollToTop() {
   return null;
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container);  // ReactDOM.createRoot yerine createRoot kullanıyoruz
 root.render(
-  <div>
-  <HashRouter>
+  <BrowserRouter>
     <ScrollToTop />
     <App />
-</HashRouter>
-</div>
+  </BrowserRouter>
 );
